@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--css external add-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@3.0.0/reset.min.css">
+    <!-- css internal add -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Animate On Scroll Library  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- ligthbox.css  -->
+    <link rel="stylesheet" href="assets/css/lightbox.css" />
+
+
+
+
+    <title>FURNITURE</title>
+</head>
+<body>
+  <header>
+<!-- video add -->
+    <div id="container" id="overlay">
+      <video autoplay muted loop id="video_cover">
+        <source src="/assets/video/11185.mp4" type="video/mp4">
+      </video>
+    </div>
+<!-- Navigation bar add -->
+    <nav>
+      <a class="title">Home</a>
+      <a class="title">About Us</a>
+      <a class="title">Furniture</a>
+      <a class="title">Contact</a>
+      <a class="title">Sign In</a>
+    </nav>
+
+  </header>
+
+<!-- main -->
+  <main class="flex-container"> 
+    <div id="brandName">AROMON DESIGN</div>
+    <img id="logo" src="/assets/img/logo.jpg" alt="Logo">
+    <!-- gradient to main color -->
+    <canvas id="canvas-basic"></canvas>
+    <div id="caption">
+      <div id="text">Who we are<p>
+          At Furniture Aromon, we believe in turning houses into homes by providing high-quality,
+          stylish, and comfortable furniture that suits your lifestyle.
+          With a passion for design and a commitment to craftsmanship,
+          we bring you a curated selection of furniture that transforms
+          your living spaces.
+          Our journey began over two decades ago, fueled by the idea that
+          furniture should not only be functional but also a reflection
+          of your personality and taste. We handpick each piece in our
+          collection, ensuring it meets our standards of durability, 
+          aesthetics, and affordability.
+        </p>
+      </div>
+            <!-- Animate On Scroll Library -->
+      <div id="img1" data-aos="fade-left">
+        <a href= "/assets/img/01.jpg" data-lightbox="roadtrip">
+          Modern Accent Round Loveseat Chair, Teddy Fabric, 200$
+        </a>
+      </div>
+
+      <div id="img2" data-aos="fade-left" >
+        <a href= "/assets/img/02.jpg" data-lightbox="roadtrip" >
+          Sofa Chairs, 250$
+        </a>
+      </div>
+      
+      <div id="img3" data-aos="fade-left">
+        <a href= "/assets/img/861.jpg" data-lightbox="roadtrip">
+          Single Sofa Chair, 400$
+        </a>
+      </div>
+  </main>
+  
+
+
+
+  <!-- js add -->
+    <script src="/assets/js/main.js"></script>
+  <!-- Include Granim library -->
+    <script src="/assets/js/granim.min.js"></script>
+  <!-- Animate On Scroll Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  <!-- Include Lightbox script after jQuery -->
+  <script src="assets/js/lightbox-plus-jquery.min.js"></script>
+
+</body>
+
+</html>

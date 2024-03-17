@@ -1,0 +1,286 @@
+
+/* Mobile-first responsive CSS */
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 100%;
+  margin: 0;
+}
+
+header {
+  position: relative; 
+  z-index: 1;
+}
+
+/* navigation bar*/
+nav {
+  position: absolute;
+  top: 10px;
+  right: 30px; 
+  display: flex; 
+  color: rgb(59, 32, 16);
+  justify-content: space-around;
+  gap: 80px;
+}
+
+nav a {
+  margin-left: 15px; 
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////*/
+
+/*  video add --> */
+#container {
+  overflow: hidden;
+  height: 100px;
+  position: relative;
+}
+
+#overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  background-size: contain;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: contain;
+}
+
+#video_cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////*/
+
+/* logo */
+
+#brandName{
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 50px;
+  color: #411c12;
+  z-index: 20;
+  margin-top: 400px;
+  left: 55%;
+  transform: translate(-50%, -50%)
+}
+
+#logo {
+  display: inline-block;
+  z-index: 1; 
+  margin-top: 60px;
+  width: 100px;
+  height: auto;
+}
+
+/* main container IMG   */
+
+.flex-container {
+  display: flex;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+  max-width: 100vw;
+  
+}
+
+.flex-container > div {
+  margin-top:1300px;
+  font-size: 30px;
+  display: flex;
+  position: absolute;
+  justify-content: space-around;
+  gap: 80px;
+}
+
+/* Who we are- Text */
+#text{
+  height: 700px;
+  width: 250px;
+  font-weight: bold;
+  color: #2d0c0c;
+}
+
+#text p{
+  font-size: 11px;
+  line-height: 2;
+  color: #2d0c0c;
+  padding-top: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+/*////////////// images ///////////*/
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row; 
+  justify-content: center; 
+  align-items: center; 
+  margin-top: 20px; 
+}
+
+
+#img1{
+  background-image: url(/assets/img/01.jpg);
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 250px;
+  font-size: 17px;
+  background-color: rgb(178, 158, 140);
+  border: rgb(178, 158, 140);
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 2px;
+}
+  
+  /* img 2 chair */
+#img2{
+  background-image: url(/assets/img/02.jpg);
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 250px;
+  font-size: 17px;
+  border-color: rgb(131, 171, 57);
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 2px; 
+}
+  
+  /* img 2 sofa */
+  #img3{
+    background-image: url(/assets/img/861.jpg);
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 250px;
+    font-size: 17px;
+    border-color: rgb(131, 171, 57);
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 2px;
+  }
+  
+#caption {
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-around; 
+  align-items: center;
+}
+
+#caption div {
+  position:relative;
+  margin-top: 5px;
+}
+
+
+#caption a {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  /* padding: 10px; */
+  padding-bottom: 30px;
+  border-radius: 5px;
+  width: 250px; 
+  text-align: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+}
+
+#caption a:hover {
+  background-color: #e48245;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////*/
+
+/* gradient to main color */
+
+#canvas-basic {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 650vh;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+} 
+
+
+
+/*//////////////////////////       Large screen  @media screen      ///////////////////////////////////////////*/
+
+  /* Screen-specific styles */
+@media screen and (min-width: 600px) {
+
+
+ /* video */
+  #container {
+    overflow: hidden;
+    height: 200px;
+    position: relative;
+  }
+
+  /* logo */
+ 
+#brandName{
+  font-size: 70px;
+}
+
+  
+  .flex-container > div {
+    margin-top:1300px;
+    font-size: 30px;
+    display: flex;
+    position: absolute;
+    justify-content: space-around;
+    gap: 80px;
+  }
+  
+  
+  /* Who we are- Text */
+  #text{
+    height: 500px;
+    width: 250px;
+    font-weight: bold;
+    color: #2d0c0c;
+  }
+   
+  /*////////////// images //////*/
+  
+
+  #caption {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around; 
+    align-items: center;
+  }
+  
+  #canvas-basic {
+    height: 200vh;
+
+  }
+}
